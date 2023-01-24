@@ -13,9 +13,9 @@ def get_unique_job_types(path: str) -> List[str]:
     lista = []
     data = read(path)
     for item in data:
-        lista.append(item["job_title"])
+        lista.append(item["job_type"])
 
-    return lista
+    return list(set(lista))
 
 
 def filter_by_job_type(jobs: List[Dict], job_type: str) -> List[Dict]:
