@@ -17,10 +17,6 @@ def get_max_salary(path: str) -> int:
     return lista[0]
 
 
-# if __name__ == "__main__":
-#     print(get_max_salary("data/jobs.csv"))
-
-
 def get_min_salary(path: str) -> int:
     lista = []
     data = read(path)
@@ -59,15 +55,3 @@ def filter_by_salary_range(
         except (ValueError):
             pass
     return lista
-
-
-# if __name__ == "__main__":
-#     b = [
-#         {"max_salary": 0, "min_salary": 10},
-#         {"max_salary": 10, "min_salary": 100},
-#         {"max_salary": 10000, "min_salary": 200},
-#         {"max_salary": 15000, "min_salary": 0},
-#         {"max_salary": 1500, "min_salary": 0},
-#         {"max_salary": -1, "min_salary": 10},
-#     ]
-#     print(filter_by_salary_range(b, 100))
