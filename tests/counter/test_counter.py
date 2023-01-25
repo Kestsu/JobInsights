@@ -6,4 +6,3 @@ def test_counter():
     result2 = count_ocurrences("data/jobs.csv", "JAVASCRIPT")
     assert result1 == 122
     assert result2 == 122
-
